@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bem-vindo(a)!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="circle-container">
+    <img src="https://img.freepik.com/premium-vector/automotive-car-logo_183875-618.jpg" alt="Circular Image" class="circle-image">
+  </div>
+
+  <div class="mar-top">
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+</div>
+
+  <ion-button expand="full" color="dark" (click)="login()">Login</ion-button>
+  
+  <ion-button class="cadast" expand="full" color="danger" (click)="cadastro()">Cadastre-se</ion-button>
+
+</ion-content>

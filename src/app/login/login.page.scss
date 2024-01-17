@@ -1,0 +1,26 @@
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  ion-content {
+    --background: url('https://drscdn.500px.org/photo/8025945/q%3D80_m%3D1500/v2?sig=dae879afb00dad95637dadcc550ea327fbe7e08436a110f86d7869528cd20299') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .mar-top{
+    margin-top: 40px;
+  }
+
+  .cadast{
+    width: 115px;
+    height: 40px;
+  }

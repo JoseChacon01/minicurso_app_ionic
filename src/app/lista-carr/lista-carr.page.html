@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Lista de Carros</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of Carros; let index">
+      <ion-avatar slot="start">
+        <img [src]="'https://th.bing.com/th/id/OIP.hmEQC63RvrC9g8zO0moh4QHaE6?pid=ImgDet&rs=1' + index" alt="avatar" />
+      </ion-avatar>
+      <ion-label>{{ item.Name }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll>
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
